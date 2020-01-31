@@ -1,0 +1,43 @@
+{
+    "name": "Instance",
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "language",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "publicationDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "work",
+            "otherEntityRelationshipName": "instance",
+            "relationshipName": "work",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200131135730",
+    "entityTableName": "instance",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": [
+        "gateway",
+        "storage"
+    ]
+}

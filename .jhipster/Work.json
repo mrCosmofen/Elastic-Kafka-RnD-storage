@@ -1,0 +1,44 @@
+{
+    "name": "Work",
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "genre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "agent",
+            "otherEntityRelationshipName": "work",
+            "relationshipName": "agent"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "instance",
+            "otherEntityRelationshipName": "work",
+            "relationshipName": "instance"
+        }
+    ],
+    "changelogDate": "20200131135732",
+    "entityTableName": "work",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": [
+        "gateway",
+        "storage"
+    ]
+}

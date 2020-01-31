@@ -1,0 +1,35 @@
+{
+    "name": "Agent",
+    "fields": [
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "work",
+            "otherEntityRelationshipName": "agent",
+            "relationshipName": "work",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200131135731",
+    "entityTableName": "agent",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": [
+        "gateway",
+        "storage"
+    ]
+}
